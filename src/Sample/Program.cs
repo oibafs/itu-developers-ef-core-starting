@@ -25,5 +25,11 @@ public class Program
 
         //4 - SQL Injection
         //SampleInjection.Run();
+
+        //5 - EF 7 - Bulk Delete
+        // var summary = BenchmarkRunner.Run<DeleteBulkBenchMarker>();
+
+        //6 - EF 7 - Bulk Update
+        var summary = BenchmarkRunner.Run<UpdateBulkBenchmarker>();
     }
 }
