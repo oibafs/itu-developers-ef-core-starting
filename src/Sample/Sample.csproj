@@ -6,6 +6,12 @@
     <RootNamespace>Sample</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- Make it run on Apple Silicon -->
+    <DefineConstants>$(DefineConstants);RELEASE;TRACE</DefineConstants>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>    
+    <!--  -->
   </PropertyGroup>
 
   <ItemGroup>
